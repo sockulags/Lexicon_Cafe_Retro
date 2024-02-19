@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-import React from 'react';
 import { TEXT } from "../constants/text";
 
 const MenuItems = ({ details }) => { 
@@ -7,10 +6,10 @@ const MenuItems = ({ details }) => {
   return (
     <div className="container">
       {item.map((menuItem, index) => (
-        <React.Fragment key={index}>
+        <>
           <p className="menu">{menuItem}</p>
           <p className="price">{price[index]}</p>
-        </React.Fragment>
+        </>
       ))}
     </div>
   );
